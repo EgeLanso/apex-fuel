@@ -12,3 +12,12 @@
 .engineer.collapsed .eng-stats,.engineer.collapsed .eng-sub,.engineer.collapsed .eng-lap,.engineer.collapsed .eng-btns>:not(#engCollapse){display:none}.engineer.collapsed .eng-main{grid-template-columns:minmax(0,1fr) auto}
 @media(max-width:1000px){.eng-main{grid-template-columns:1fr auto}.eng-stats{grid-column:1/-1;grid-row:2}.eng-extra{grid-template-columns:1fr}}
 @media(max-width:760px){.engineer{top:60px;padding:8px 13px}.eng-main{grid-template-columns:1fr}.eng-ctrl{justify-items:start}.eng-stats{grid-template-columns:repeat(4,1fr);gap:4px 8px}.eng-stats b{font-size:18px}.eng-btns{flex-wrap:wrap}.engineer.collapsed .eng-main{grid-template-columns:1fr auto}}
+
+.adm-box{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:12px}
+.adm-box form{display:flex;flex-direction:column;gap:10px;max-width:520px}
+.preset-form{flex-direction:row!important;gap:8px!important;max-width:none!important}
+.preset-form input{flex:1}
+.adm-box #admIn{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
+.profile-card .profile-actions{flex-wrap:wrap}
+@media(max-width:640px){.preset-form{flex-direction:column!important}}
+.brand-mark[hidden]{display:none}
