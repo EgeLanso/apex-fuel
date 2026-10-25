@@ -21,3 +21,47 @@
 .profile-card .profile-actions{flex-wrap:wrap}
 @media(max-width:640px){.preset-form{flex-direction:column!important}}
 .brand-mark[hidden]{display:none}
+
+
+/* ── Apex pit-wall refinement · autumn 2026 ── */
+:root{--bg:#101214;--card:#171a1d;--line:#30353a;--text:#f0f0ed;--muted:#a1a6aa;--accent:#e06a42;--orange:#d65b36;--green:#87c79b;--red:#e27a72}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+body{background:var(--bg);background-image:linear-gradient(90deg,transparent 0,transparent calc(100% - 1px),#ffffff04 calc(100% - 1px));background-size:80px 100%;letter-spacing:.005em}
+.topbar{background:rgba(16,18,20,.96);border-bottom-color:#34383d;backdrop-filter:blur(16px)}
+.brand{letter-spacing:.1em}.brand-logo,.brand-mark{width:36px;height:36px}
+.top-status{font-size:9px;letter-spacing:.16em}
+.container{max-width:1320px}
+.hero{padding-top:48px;padding-bottom:34px}
+.hero h1{letter-spacing:-.035em}
+.hero-tag{border-radius:2px;background:#17191b;border-color:#45413e}
+.tabs{gap:12px}
+.tab{letter-spacing:.04em;transition:color .18s,border-color .18s}
+.tab:hover{color:#fff}
+.card,.result-card,.profile-card,.modal-card{border-radius:4px;box-shadow:none}
+.card{background:#171a1d;border-color:#30353a;transition:border-color .2s,background .2s}
+.card:hover{border-color:#4b535a}
+.section-title{margin-bottom:22px}
+.step{border-radius:3px;background:#29201d;border-color:#674133;color:#ef8a65}
+.result-card{background:#1b1b1a;border-color:#6b4234}
+.btn{border-radius:3px;transition:background .18s,border-color .18s,color .18s}
+.btn-primary{background:#df6841;color:#17120f}
+.btn-primary:hover{background:#f07a52}
+.btn-secondary{background:#25292d;border-color:#3a4045}
+.btn-secondary:hover{background:#30363b}
+.btn-outline{border-color:#555d63}
+input,select{border-radius:3px;background:#111315;border-color:#3a4045}
+input:focus,select:focus{border-color:#e06a42;box-shadow:0 0 0 2px #e06a421b}
+.result-card .pill{border-radius:2px}
+table{border-collapse:collapse}
+th{color:#aeb4b9;text-transform:uppercase;letter-spacing:.09em;font-size:9px}
+td,th{border-bottom:1px solid #30353a}
+.engineer{border-bottom:1px solid #3c4145;background:rgba(17,19,21,.97);backdrop-filter:blur(18px)}
+.eng-tag{letter-spacing:.15em}
+.eng-stats>div{border-left:1px solid #383d42;padding-left:12px}
+.eng-stats b{font-variant-numeric:tabular-nums}
+.eng-lapbox button{border-radius:3px}
+footer{color:#858c92}
+:focus-visible{outline:2px solid #f08a67;outline-offset:3px}
+::selection{background:#e06a42;color:#151311}
+@media(max-width:760px){.hero{padding-top:30px}.hero-tag{display:none}.container{padding-inline:16px}.card{padding:18px}.tabs{overflow-x:auto;white-space:nowrap}.eng-stats>div{padding-left:6px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
