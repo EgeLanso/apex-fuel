@@ -331,3 +331,4 @@ function b64d(x){x=x.replace(/-/g,'+').replace(/_/g,'/');while(x.length%4)x+='='
 $('shareBtn').onclick=async()=>{const u=location.href.split('#')[0]+'#plan='+b64e(getData());try{await navigator.clipboard.writeText(u);toast(t('linkCopied'))}catch{prompt(t('copyThis'),u)}};
 function loadPlanFromHash(){const m=location.hash.match(/^#plan=([A-Za-z0-9_-]+)$/);if(!m)return;try{const d=b64d(m[1]);if(!d||typeof d!=='object'||Array.isArray(d))throw 0;if(d.pits&&!Array.isArray(d.pits))delete d.pits;setData(d);switchTab('calculator');toast(t('planLoaded'));history.replaceState(null,'',location.href.split('#')[0])}catch{toast(t('planBad'))}}
 loadPlanFromHash();
+addEventListener('hashchange',loadPlanFromHash);
